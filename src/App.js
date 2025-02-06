@@ -4,7 +4,15 @@ function App() {
     const [text, setText] = useState('');
 
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
+        <div style={{
+            backgroundColor: 'black', 
+            color: 'white', 
+            height: '100vh', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center', 
+            justifyContent: 'center'
+        }}>
             <h1>City Connect App</h1>
             <input
                 type="text"
@@ -15,8 +23,11 @@ function App() {
                     padding: '10px',
                     fontSize: '16px',
                     borderRadius: '5px',
-                    border: '1px solid #ccc',
-                    width: '300px'
+                    border: '1px solid white',
+                    width: '300px',
+                    backgroundColor: 'black',
+                    color: 'white',
+                    outline: 'none'
                 }}
             />
             <p>You entered: {text}</p>
