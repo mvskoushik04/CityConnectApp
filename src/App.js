@@ -1,5 +1,6 @@
 import { useState } from "react";
 import data from "./data.json"; // Import JSON data
+import "./App.css"; // Ensure this is present
 
 function App() {
   const [query, setQuery] = useState("");
