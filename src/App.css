@@ -1,17 +1,32 @@
-/* Main container styles */
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
   background-color: black;
   color: white;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Top navigation bar */
+/* Centering the content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navbar styling */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -21,7 +36,7 @@
   background-color: black;
 }
 
-/* Title aligned to the left */
+/* Title aligned left */
 .header {
   font-size: 24px;
   font-weight: bold;
@@ -29,7 +44,7 @@
   margin-left: 20px;
 }
 
-/* Sign-in button aligned to the right */
+/* Sign In button aligned right */
 .signin-button {
   margin-right: 20px;
   padding: 10px 20px;
@@ -39,14 +54,6 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-/* Centered content */
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
 }
 
 /* Input field */
@@ -60,4 +67,5 @@
   color: white;
   outline: none;
   text-align: center;
+  margin-top: 20px;
 }

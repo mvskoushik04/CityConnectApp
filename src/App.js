@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import SignIn from "./SignIn";
+import "./index.css"; // Ensure CSS is imported
 
 function Home() {
     const [text, setText] = useState("");
@@ -11,7 +12,7 @@ function Home() {
 
     return (
         <div className="container">
-            {/* Top Navigation Bar */}
+            {/* Navigation Bar */}
             <div className="navbar">
                 <h1 className="header">City Connect App</h1>
                 <Link to="/signin">
@@ -19,7 +20,7 @@ function Home() {
                 </Link>
             </div>
 
-            {/* Centered Input Section */}
+            {/* Input Section */}
             <div className="content">
                 <input
                     type="text"
