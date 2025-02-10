@@ -10,45 +10,24 @@ function Home() {
     }, [text]);
 
     return (
-        <div style={{
-            backgroundColor: "black",
-            color: "white",
-            height: "100vh",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center"
-        }}>
-            <h1>City Connect App</h1>
+        <div className="main-container">
+            {/* City Connect App title positioned at the top-left */}
+            <h1 className="header">City Connect App</h1>
+
+            {/* Sign In button positioned at the top-right */}
+            <Link to="/signin">
+                <button className="signin-button">Sign In</button>
+            </Link>
+
+            {/* Input field centered on the page */}
             <input
                 type="text"
                 placeholder="Enter text here..."
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                style={{
-                    padding: "10px",
-                    fontSize: "16px",
-                    borderRadius: "5px",
-                    border: "1px solid white",
-                    width: "300px",
-                    backgroundColor: "black",
-                    color: "white",
-                    outline: "none"
-                }}
+                className="input-field"
             />
             <p>You entered: {text}</p>
-            <Link to="/signin">
-                <button style={{
-                    marginTop: "20px",
-                    padding: "10px 20px",
-                    fontSize: "16px",
-                    backgroundColor: "white",
-                    color: "black",
-                    border: "none",
-                    borderRadius: "5px",
-                    cursor: "pointer"
-                }}>Sign In</button>
-            </Link>
         </div>
     );
 }
