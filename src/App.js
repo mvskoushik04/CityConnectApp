@@ -10,24 +10,26 @@ function Home() {
     }, [text]);
 
     return (
-        <div className="main-container">
-            {/* City Connect App title positioned at the top-left */}
-            <h1 className="header">City Connect App</h1>
+        <div className="container">
+            {/* Top Navigation Bar */}
+            <div className="navbar">
+                <h1 className="header">City Connect App</h1>
+                <Link to="/signin">
+                    <button className="signin-button">Sign In</button>
+                </Link>
+            </div>
 
-            {/* Sign In button positioned at the top-right */}
-            <Link to="/signin">
-                <button className="signin-button">Sign In</button>
-            </Link>
-
-            {/* Input field centered on the page */}
-            <input
-                type="text"
-                placeholder="Enter text here..."
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-                className="input-field"
-            />
-            <p>You entered: {text}</p>
+            {/* Centered Input Section */}
+            <div className="content">
+                <input
+                    type="text"
+                    placeholder="Enter text here..."
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
+                    className="input-field"
+                />
+                <p>You entered: {text}</p>
+            </div>
         </div>
     );
 }
