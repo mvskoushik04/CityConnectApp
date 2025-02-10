@@ -6,7 +6,7 @@ function Home() {
     const [text, setText] = useState("");
 
     useEffect(() => {
-        document.title = text ? Typing: ${text} : "City Connect";
+        document.title = text ? `Typing: ${text}` : "City Connect";
     }, [text]);
 
     return (
