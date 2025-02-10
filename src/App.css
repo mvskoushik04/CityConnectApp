@@ -1,7 +1,11 @@
+/* Center align content */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
+/* Logo animation */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +17,16 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +38,66 @@
   color: white;
 }
 
+/* Links */
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Search container */
+.search-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input field */
+input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Search button */
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Results section */
+.results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Individual result card */
+.result-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* No results message */
+.no-results {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
 }
