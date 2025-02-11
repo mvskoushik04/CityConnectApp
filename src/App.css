@@ -1,71 +1,60 @@
-* {
+/* Set full-page black background */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: black;
+  color: white;
   font-family: Arial, sans-serif;
 }
 
-body {
-  background-color: black;
-  color: white;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* Centering the content */
+/* Main container */
 .container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-/* Navbar styling */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: black;
-}
-
-/* Title aligned left */
-.header {
+/* Title on the top left */
+.title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   font-size: 24px;
   font-weight: bold;
-  color: white;
-  margin-left: 20px;
 }
 
-/* Sign In button aligned right */
-.signin-button {
-  margin-right: 20px;
-  padding: 10px 20px;
+/* Sign-in button on the top right */
+.signin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
   font-size: 16px;
+  border: none;
+  cursor: pointer;
   background-color: white;
   color: black;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-/* Input field */
-.input-field {
+.signin:hover {
+  background-color: gray;
+}
+
+/* Search bar in the center */
+.search-container {
+  margin-top: 20px;
+}
+
+.search-container input {
   padding: 10px;
   font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid white;
   width: 300px;
-  background-color: black;
-  color: white;
-  outline: none;
+  border: none;
+  border-radius: 5px;
   text-align: center;
-  margin-top: 20px;
 }

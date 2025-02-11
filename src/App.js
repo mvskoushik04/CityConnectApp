@@ -1,49 +1,28 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import SignIn from "./SignIn";
-import "./index.css"; // Ensure CSS is imported
-
-function Home() {
-    const [text, setText] = useState("");
-
-    useEffect(() => {
-        document.title = text ? `Typing: ${text}` : "City Connect";
-    }, [text]);
-
-    return (
-        <div className="container">
-            {/* Navigation Bar */}
-            <div className="navbar">
-                <h1 className="header">City Connect App</h1>
-                <Link to="/signin">
-                    <button className="signin-button">Sign In</button>
-                </Link>
-            </div>
-
-            {/* Input Section */}
-            <div className="content">
-                <input
-                    type="text"
-                    placeholder="Enter text here..."
-                    value={text}
-                    onChange={(e) => setText(e.target.value)}
-                    className="input-field"
-                />
-                <p>You entered: {text}</p>
-            </div>
-        </div>
-    );
-}
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/signin" element={<SignIn />} />
-            </Routes>
-        </Router>
-    );
+  const [search, setSearch] = useState("");
+
+  return (
+    <div className="container">
+      {/* Title on the top left */}
+      <h1 className="title">CityConnectApp</h1>
+
+      {/* Sign-in button on the top right */}
+      <button className="signin">Sign In</button>
+
+      {/* Search bar in the center */}
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+    </div>
+  );
 }
 
 export default App;
