@@ -6,17 +6,17 @@ function App() {
 
   return (
     <div className="container">
-      {/* Title on the top left */}
-      <h1 className="title">CityConnectApp</h1>
+      {/* Header Section */}
+      <header>
+        <h1 className="title">CityConnectApp</h1>
+        <button className="signin">Sign In</button>
+      </header>
 
-      {/* Sign-in button on the top right */}
-      <button className="signin">Sign In</button>
-
-      {/* Search bar in the center */}
+      {/* Centered Search Bar */}
       <div className="search-container">
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Search for places, people, or services..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
