@@ -4,6 +4,10 @@ import "./App.css";
 function App() {
   const [search, setSearch] = useState("");
 
+  const handleSearch = () => {
+    alert(`Searching for: ${search}`);
+  };
+
   return (
     <div className="container">
       {/* Header Section */}
@@ -20,6 +24,7 @@ function App() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
+        <button className="search-btn" onClick={handleSearch}>Search</button>
       </div>
     </div>
   );
