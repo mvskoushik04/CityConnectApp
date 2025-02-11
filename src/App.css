@@ -1,60 +1,89 @@
-/* Set full-page black background */
-body {
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-/* Main container */
+/* Body Styling */
+body {
+  background-color: #000;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+/* Container */
 .container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
-/* Title on the top left */
+/* Header */
+header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* Title Styling */
 .title {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ffcc00, #ff6600);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-/* Sign-in button on the top right */
+/* Sign-in Button */
 .signin {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 8px 15px;
+  padding: 10px 20px;
   font-size: 16px;
+  font-weight: bold;
   border: none;
   cursor: pointer;
-  background-color: white;
+  background: linear-gradient(135deg, #ff6600, #ffcc00);
   color: black;
-  border-radius: 5px;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
 }
 
 .signin:hover {
-  background-color: gray;
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+  transform: scale(1.05);
 }
 
-/* Search bar in the center */
+/* Search Bar */
 .search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .search-container input {
-  padding: 10px;
-  font-size: 16px;
-  width: 300px;
-  border: none;
-  border-radius: 5px;
+  width: 400px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ff6600;
+  border-radius: 30px;
   text-align: center;
+  outline: none;
+  background: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px #ff6600;
 }
