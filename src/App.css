@@ -2,7 +2,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-image: url('C:/Users/medur/.vscode/cli/cityconnectapp/public/background.jpg'); /* Path to the image in the public folder */
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Fix the background while scrolling */
   color: white;
 }
 
@@ -15,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
 }
 
 .home h1 {
