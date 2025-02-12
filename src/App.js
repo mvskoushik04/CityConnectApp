@@ -1,33 +1,30 @@
-import React, { useState } from "react";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import SignIn from './components/SignIn';
 import "./App.css";
 
-function App() {
-  const [search, setSearch] = useState("");
-
-  const handleSearch = () => {
-    alert(`Searching for: ${search}`);
-  };
-
+const App = () => {
   return (
-    <div className="container">
-      {/* Header Section */}
-      <header>
-        <h1 className="title">CityConnectApp</h1>
-        <button className="signin">Sign In</button>
-      </header>
-
-      {/* Centered Search Bar */}
-      <div className="search-container">
-        <input
-          type="text"
-          placeholder="Search for places, people, or services..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <button className="search-btn" onClick={handleSearch}>Search</button>
+    <Router>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<SignIn />} />
+        </Routes>
       </div>
+    </Router>
+  );
+};
+
+// Home component for the opening page
+const Home = () => {
+  return (
+    <div className="home">
+      <h1>Welcome to CityConnectApp</h1>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,57 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid gold;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid gold;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #ffd700;
+  }
+  
+  .auth-buttons .signin-button {
+    padding: 8px 16px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .auth-buttons .signin-button:hover {
+    background-color: #ffd700;
+  }

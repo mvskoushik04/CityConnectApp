@@ -1,0 +1,51 @@
+/* src/components/SignIn.css */
+.signin-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  
+  .signin-page h2 {
+    margin-bottom: 20px;
+    color: gold;
+  }
+  
+  .signin-page input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    border: 1px solid gold;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+  }
+  
+  .signin-page button {
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signin-page button:hover {
+    background-color: #ffd700;
+  }
+  
+  .signin-page p {
+    margin-top: 10px;
+  }
+  
+  .signin-page a {
+    color: gold;
+    text-decoration: none;
+  }
+  
+  .signin-page a:hover {
+    text-decoration: underline;
+  }
