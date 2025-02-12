@@ -7,10 +7,6 @@ const Header = () => {
   return (
     <header className="header">
       <div className="title">CityConnectApp</div>
-      <div className="search-container">
-        <input type="text" placeholder="Search for profession ..." className="search-box" />
-        <button className="search-button">Search</button>
-      </div>
       <div className="auth-buttons">
         <Link to="/signin">
           <button className="signin-button">Sign Up / Login</button>
