@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <div className="title">CityConnectApp</div>
       <div className="search-container">
-        <input type="text" placeholder="Search..." className="search-box" />
+        <input type="text" placeholder="Search for profession ..." className="search-box" />
         <button className="search-button">Search</button>
       </div>
       <div className="auth-buttons">
