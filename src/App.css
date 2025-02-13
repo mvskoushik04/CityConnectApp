@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('C:/Users/medur/.vscode/cli/cityconnectapp/public/background.jpg'); /* Path to the image in the public folder */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:/Users/medur/.vscode/cli/cityconnectapp/public/background.jpg'); /* Path to the image in the public folder */
   background-size: cover; /* Ensure the image covers the entire page */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
