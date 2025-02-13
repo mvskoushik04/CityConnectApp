@@ -8,10 +8,16 @@ body {
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-attachment: fixed; /* Fix the background while scrolling */
   color: white;
+  min-height: 100vh;
 }
 
 .app {
   text-align: center;
+  min-height: 100vh; /* Ensures the container covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;
 }
 
 .home {
