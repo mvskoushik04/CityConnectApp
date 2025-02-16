@@ -238,5 +238,17 @@
         "nuid": "NULL",
         "aadhaar": "verified",
         "desc": "I am a chauffeur based in Saidapet, Chennai. I am looking to work for 12 months with a trial of 1 week. I charge 16500 rupees per month."
+    },
+    {
+        "name": "Kumar Kannan",
+        "dob": "1989-02-28",
+        "age": 35,
+        "gender": "Male",
+        "job_title": "Chauffeur",
+        "number": "+919876543230",
+        "timework": "12",
+        "nuid": "NULL",
+        "aadhaar": "verified",
+        "desc": "I am a chauffeur based in Saidapet, Chennai. I am looking to work for 12 months with a trial of 1 week. I charge 16500 rupees per month."
     }
 ]
