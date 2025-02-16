@@ -250,5 +250,17 @@
         "nuid": "NULL",
         "aadhaar": "verified",
         "desc": "I am a chauffeur based in Saidapet, Chennai. I am looking to work for 12 months with a trial of 1 week. I charge 16500 rupees per month."
+    },
+    {
+        "name": "Ravi Kumar",
+        "dob": "1985-09-12",
+        "age": 38,
+        "gender": "Male",
+        "job_title": "Electrician",
+        "number": "+919876543231",
+        "timework": "8",
+        "nuid": "verified",
+        "aadhaar": "verified",
+        "desc": "I am an electrician based in Anna Nagar, Chennai. I am looking to work for 6 months with a trial of 2 weeks. I charge 12000 rupees per month."
     }
 ]
