@@ -15,3 +15,16 @@ mongoose.connect('mongodb://localhost:27017/cityconnect', {
 })
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.error('Failed to connect to MongoDB', err));
+
+const professionalSchema = new mongoose.Schema({
+    name: String,
+    dob: String,
+    age: Number,
+    gender: String,
+    job_title: String,
+    number: String,
+    timework: String,
+    nuid: String,
+    aadhaar: String,
+    desc: String,
+});
