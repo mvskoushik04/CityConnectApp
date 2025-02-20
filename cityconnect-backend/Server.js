@@ -28,3 +28,16 @@ const professionalSchema = new mongoose.Schema({
     aadhaar: String,
     desc: String,
 });
+
+// Create a model
+const Professional = mongoose.model('Professional', professionalSchema);
+
+// API to fetch all professionals
+app.get('/api/professionals', async (req, res) => {
+    try {
+        const professionals = await Professional.find();
+        res.json(professionals);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
