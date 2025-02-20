@@ -41,3 +41,13 @@ app.get('/api/professionals', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
+
+app.get('/api/professionals/search', async (req, res) => {
+    const { job_title } = req.query;
+    try {
+        const professionals = await Professional.find({ job_title: new RegExp(job_title, 'i') });
+        res.json(professionals);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
