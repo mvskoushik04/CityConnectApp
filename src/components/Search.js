@@ -1,16 +1,19 @@
 // src/components/Search.js
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Search.css';
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState([]);
 
-  const handleSearch = () => {
-    const filteredResults = professionals.filter((professional) =>
-      professional.job_title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setResults(filteredResults);
+  const handleSearch = async () => {
+    try {
+      const response = await axios.get(`http://localhost:5000/api/professionals/search?job_title=${searchTerm}`);
+      setResults(response.data);
+    } catch (err) {
+      console.error('Error fetching data:', err);
+    }
   };
 
   return (

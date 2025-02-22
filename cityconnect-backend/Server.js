@@ -51,3 +51,9 @@ app.get('/api/professionals/search', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
+
+// Start the server
+const PORT = 5000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
